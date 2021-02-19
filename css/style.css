@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -36,6 +37,43 @@
     text-align: center;
     flex: 1 0 auto;
     z-index: 1;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300px;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #ffff;
+}
+
+.btn-primary:hover {
+    background-color: #ffff;
+    color: #58af9b;
+    font-weight: bold;
+}
+
+.title-primary {
+    color: #ffff;
 }
 
 .second-column {
