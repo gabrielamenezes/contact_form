@@ -15,8 +15,8 @@
 .content {
     border-radius: 15px;
     background-color: #ffff;
-    width: 80%;
-    height: 80%;
+    width: 960px;
+    height: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,9 +28,15 @@
     background-color: #3fa890;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 60%;
 }
 .first-content {
     display: flex;
+    display: none;
 }
 
 .first-column {
@@ -70,21 +76,28 @@
     width: 150px;
     align-self: center;
     border-width: 0px;
+    margin-top: 1rem;
 }
 
 .btn-primary {
     background-color: transparent;
     border: 1px solid #ffff;
 }
-
-.btn-primary:hover {
-    background-color: #ffff;
-    color: #3fa890;
-}
 .btn-second {
     background-color: #3fa890;
     border: 1px solid #3fa890;
 }
+
+.btn-second:hover {
+    background-color: #ffff;
+    border: 1px solid #3fa890;
+    color: #3fa890;
+}
+.btn-primary:hover {
+    background-color: #ffff;
+    color: #3fa890;
+}
+
 .title-primary {
     color: #ffff;
 }
@@ -99,7 +112,19 @@
 .title-second {
     color:#58af9b;
 }
+.social-media {
+    margin: 1rem;
+}
 
+.link-social-media:hover .item-social-media {
+    background-color: #3fa890;
+    color: #ffff;
+    border: #3fa890;
+}
+
+.link-social-media:not(:first-child) {
+    margin-left: 10px; /* não quero que seja atribuido ao primeiro filho de link-social-media o margin-left*/
+}
 .list-social-media {
     display: flex;
     list-style-type: none;
@@ -111,23 +136,55 @@
     height: 35px;
     line-height: 35px;
     text-align: center;
-}
-.item-social-media a {
     color: #95a5a6;
 }
+
 .form {
     display: flex;
     flex-direction: column;
     width: 55%;
 }
-.form .input {
+.form input {
     height: 45px;
     border: none;
     background-color: #ecf0f1;
-    margin: 8px;
-}
-.second-content {
-    position: absolute;
-    display: none;
+    width: 100%;
 }
 
+.label-input-wrap {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 5px;
+}
+
+/* second content*/
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+}
+
+.second-content .second-column {
+    order: 1;
+}
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: uppercase;
+}
