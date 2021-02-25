@@ -247,7 +247,61 @@ input:-webkit-autofill {
     z-index: 13;
 }
 
+/* deslocamento CONTEUDO ATRÁS DO CONTENT BEFORE*/
 
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1s;
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1s;
+}
+
+/* ANIMAÇÃO CSS PARA CONTEÚDO */
+@keyframes deslocamentoDir {
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 60px;
+    }
+
+    50% {
+        left: 100px;
+    }
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+@keyframes deslocamentoEsq {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -180px;
+        opacity: .5;
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+    }
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
 /* animação css*/
 
 @keyframes slidein {
