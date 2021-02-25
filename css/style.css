@@ -209,12 +209,16 @@ input:-webkit-autofill {
 }
 
 .sign-in-js .second-content .first-column,
-.sign-in-js .btn-second .second-column {
+.sign-in-js .second-content .second-column {
     z-index: 2;
 }
 
 .sign-in-js .content::before {
     left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .sign-up-js .second-content .first-column,
